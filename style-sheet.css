@@ -435,8 +435,16 @@ footer{
         margin-right: 15px;
     }
     
-     .top-contents{
-        width: 90%;
+    .top-contents{
+        padding: 120px 50px;
+    }
+    
+    .feature-wrapper h2{
+        font-size: 25px;
+    }
+    
+    .faculty-wrapper{
+        padding: 25px 70px;
     }
     
     .event-contents img{
