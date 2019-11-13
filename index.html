@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>京都大学</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="style-sheet.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    </head>
+    
+    <body>
+        <header>
+            <div class="header-wrapper">
+                <div class="header-left">
+                     <i class="fa fa-university fa-lg"></i>
+                    <h2>京都大学で学ぼう</h2>
+                </div>
+                <div class="header-btn">
+                    <i class="fa fa-bars fa-2x"></i>
+                    <p class="btn" id="event-btn">Events</p>
+                    <p class="btn" id="access-btn" >Access</p>
+                    <p class="btn" id="form-btn">お問い合わせ</p>
+                    <p class="btn" id="feature-btn">特徴</p>
+                    <p class="btn" id="faculty-btn">学部紹介</p>
+                </div>
+            </div>
+            
+        </header>
+        <modal-header>
+            <div class="m-header-wrapper">
+                <div class="menu-container">
+                    <p>MENU</p>
+                    <i class="fa fa-close fa-2x"></i>
+                </div>
+                <p class="modal-btn" id="modal-event">Events</p>
+                <p class="modal-btn" id="modal-access">Access</p>
+                <p class="modal-btn" id="modal-form">お問い合わせ</p>
+                <p class="modal-btn" id="modal-feature">特徴</p>
+                <p class="modal-btn modal-bottom" id="modal-faculty">学部紹介</p>
+            </div>
+        </modal-header>
+        
+        <div id="fadeLayer"></div>
+        
+        <div class="top-wrapper">
+            <div class="top-contents">
+                <h1>そうだ<br>京都大学、<br>行こう。</h1>
+                <p>https://photo53.com/img/sennyuji3.jpg</p>
+            </div>
+        </div>
+        
+        <div class="feature" id="feature">
+            <div class="feature-wrapper">
+                <div class="feature-contents">
+                    <h2>ー京都大学の特徴ー</h2>
+                    <div class="feature-1">
+                        <h3>1.自由な学風</h3>
+                        <p>京都大学では、創立以来「自由な学風が継承されています。このような学風なので、好きなことを好きなだけ学ぶことができます。</p>
+                    </div>
+                    <div class="feature-2">
+                        <h3>2.多種多様な人がいる</h3>
+                        <p>京都大学には、いい意味で変わった人が多いです。色々な考え方を持った人たちと触れ合うのは面白くて、価値観に深みも出ることでしょう。</p>
+                    </div>
+                    <div class="feature-3">
+                        <h3>3.遊びに行きやすい</h3>
+                        <p>京都の中心、河原町が近くにあります。河原町にはとても多くのレストランやデパート、アパレルがあるので買い物には困りません。</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+        <div class="faculty" id="faculty">
+            <div class="faculty-wrapper">
+                <div class="faculty-contents">
+                    <h1>学部紹介</h1>
+                    <div class="switch-btn">
+                        <h2 class="bunnkei-btn">文系学部</h2>
+                        <h2 class="rikei-btn notActive">理系学部</h2>
+                    </div>
+                    <div class="bunnkei">
+                        <div class="bunnkei-faculty">
+                           <div class="faculty-title">
+                               <i class="fa fa-group"></i>
+                               <h3>総合人間学部（文系）</h3>
+                           </div>
+                            <p>→学科：総合人間学科</p>
+                        </div>
+                        <div class="bunnkei-faculty">
+                            <div class="faculty-title">
+                                <i class="fa fa-book"></i>
+                                <h3>文学部</h3>
+                            </div>
+                            <p>→学科：人文学科</p>
+                        </div>
+                        <div class="bunnkei-faculty">
+                            <div class="faculty-title">
+                                <i class="fa fa-mortar-board"></i>
+                                <h3>教育学部</h3>
+                            </div>
+                            <p>→学科：教育学科</p>
+                        </div>
+                        <div class="bunnkei-faculty">
+                            <div class="faculty-title">
+                                <i class="fa fa-balance-scale"></i>
+                                <h3>法学部</h3>
+                            </div>
+                            <p>→学科：なし</p>
+                        </div>
+                        <div class="bunnkei-faculty">
+                            <div class="faculty-title">
+                                <i class="fa fa-money"></i>
+                                <h3>経済学部</h3>
+                            </div>
+                            <p>→学科：経済経営学科</p>
+                        </div>
+                    </div>
+                    <div class="rikei">
+                        <div class="rikei-faculty">
+                            <div class="faculty-title">
+                                <i class="fa fa-group"></i>
+                                <h3>総合人間学部（理系）</h3>
+                            </div>
+                            <p>→学科：総合人間学科</p>
+                        </div>
+                        <div class="rikei-faculty">
+                            <div class="faculty-title">
+                                <i class="fa fa-flask"></i>
+                                <h3>理学部</h3>
+                            </div>
+                            <p>→学科：理学科</p>
+                        </div>
+                        <div class="rikei-faculty">
+                            <div class="faculty-title">
+                                <i class="fa fa-stethoscope"></i>
+                                <h3>医学部</h3>
+                            </div>
+                            <p>→学科：医学科、人間健康科学科</p>
+                        </div>
+                        <div class="rikei-faculty">
+                            <div class="faculty-title">
+                                <i class="fa fa-medkit"></i>
+                                <h3>薬学部</h3>
+                            </div>
+                            <p>→学科：薬科学科、薬学科</p>
+                        </div>
+                        <div class="rikei-faculty">
+                            <div class="faculty-title">
+                                <i class="fa fa-cogs"></i>
+                                <h3>工学部</h3>
+                            </div>
+                            <p>→学科：地球工学科、建築学科、物理工学科、電気電子工学科、情報学科、工業化学科</p>
+                        </div>
+                        <div class="rikei-faculty">
+                            <div class="faculty-title">
+                                <i class="fa fa-cutlery"></i>
+                                <h3>農学部</h3>
+                            </div>
+                            <p>→学科：資源生物科学科、応用生命科学科、地球環境工学科、食料・環境経済学科、森林科学科、食品生物科学科</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="event" id="event">
+            <div class="event-wrapper">
+                <div class="event-contents">
+                    <h2>-EVENTS-</h2>
+                    <p>11月21、22、25日にNovember Festival(京大の学園祭、通称：NF)があります！</p>
+                    <p class="welcome">ぜひ遊びに来てください！！</p>
+                    <img src="images/nf-zenyasai.jpg" class="zenyasai"><img src="images/nf-honnsai.jpg" class="honsai" class="nf">
+                    
+                </div>
+            </div>
+        </div>
+        
+        <div class="access" id="access">
+            <div class="access-wrapper">
+                <div class="access-contents">
+                    <h2>-Access-</h2>
+                    <div>
+                        <h3>○吉田キャンパス○</h3>
+                        <p>所在地： 〒606-8501 京都市左京区吉田本町</p>
+                        <p>アクセス：　京阪・出町柳駅から徒歩20分</p>
+                    </div>
+                    <div>
+                        <h3>○宇治キャンパス○</h3>
+                        <p>所在地： 〒611-0011 京都府宇治市五ケ庄</p>
+                        <p>アクセス：　JR・黄檗駅から徒歩5分</p>
+                    </div>
+                    <div>
+                        <h3>○桂キャンパス○</h3>
+                        <p>所在地： 〒615-8520 京都市西京区京都大学桂</p>
+                        <p>アクセス：　阪急・桂駅からバスで12分</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <form>
+            <div class="form-wrapper" id="form">
+                <div class="form-contents">
+                    <h2>ーお問い合わせー</h2>
+                    <p class="send">メッセージを送る</p>
+                    <input placeholder="Email-address" class="input email"><br>
+                    <textarea  class="input" placeholder="Message"></textarea><br>
+                    <input type="submit" value="Submit" class="submit">
+                    <p class="link">https://photo53.com/img/kyotodaigaku1.jpg</p>
+                </div>
+            </div>
+        </form>
+        
+        <footer>
+            <div class="footer-wrapper">
+                <div class="page-top">
+                    <p>↑　PAGE TOP</p>
+                </div>
+                <div class="footer-contents">
+                    <img src="images/alien-monster2.jpg">
+                    <p>Sagara</p>
+                </div>
+            </div>
+        </footer>
+        
+        
+        
+        <script src="script.js"></script>
+    </body>
+    
+</html>
