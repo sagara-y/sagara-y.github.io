@@ -435,6 +435,10 @@ footer{
         margin-right: 15px;
     }
     
+     .top-contents{
+        width: 90%;
+    }
+    
     .event-contents img{
         display: block;
         width: 90%;
