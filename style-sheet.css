@@ -1,0 +1,450 @@
+body{
+    margin: 0;
+}
+
+#fadeLayer{
+    position: fixed;
+    
+    width: 100%;
+    height: 100%;
+    
+    background-color: #000000;
+    opacity: 0.5;
+    display: none;
+    z-index: 1;
+}
+
+header{
+    background-color: #555555;
+    height: 60px;
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+}
+
+.header-wrapper{
+    color: white;
+    display: flex;
+}
+
+.header-left{
+    width: 40%;
+    display: flex;
+    padding: 13px 0 0 20px
+}
+
+.header-wrapper h2{
+    font-family:  serif;
+    
+    margin: 0 0;
+}
+
+.fa-university{
+    display: inline-block;
+    margin-top: 10px;
+    margin-right: 5px;
+}
+.header-btn{
+    text-align: right;
+    width: 60%
+    
+}
+
+.fa-bars{
+    display: none;
+}
+
+.header-wrapper p{
+    display: inline-block;
+    margin-right: 15px;
+    margin-top: 30px;
+}
+
+modal-header{
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+    text-align: center;
+    color: white;
+    
+}
+
+.m-header-wrapper{
+    display: none; 
+}
+
+.menu-container{
+    background-color: #555555;
+    height: 60px;
+    border: 1px solid #555555;
+    display: flex;
+}
+
+.menu-container p{
+    margin: 0 auto;
+    font-size: 20px;
+    line-height: 60px;
+}
+
+.fa-close{
+    display: block;
+    margin: 15px 15px 0 -40px;
+}
+
+.modal-btn{
+    background-color:  #a9a9a9;
+    margin: 0;
+    height: 50px;
+    border-top: 1px solid #999;
+    box-shadow: 0px -1px 0px #555555;
+    line-height: 50px;
+}
+
+.modal-bottom{
+    border-bottom: 1px solid #555555;
+}
+
+.top-wrapper{
+    background-image: url(images/kouyou2.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 600px;
+    -ms-writing-mode: tb-rl;
+    writing-mode: vertical-rl;
+    position: relative;
+}
+
+.top-contents{
+    padding: 120px ;
+    width: 600px;
+    margin: 0 auto;
+}
+
+.top-wrapper h1{
+    margin-top: 0;
+    color: white;
+    font-family: serif;
+    font-size: 60px;
+}
+
+.top-wrapper p{
+    color: #999999;
+    font-size: 10px;
+    writing-mode: horizontal-tb;
+    position: absolute;
+    bottom: 0;
+    right: 3px;
+}
+
+.feature{
+    background-color: #FFFFEE;
+}
+
+.feature-wrapper{
+    padding: 60px 60px;
+    font-family: monospace;
+    
+}
+
+.feature-contents{
+    border-bottom: 1px solid  #A9A9A9;
+    padding-bottom: 50px
+}
+
+.feature-wrapper h2{
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 50px;
+}
+
+.feature-wrapper h3{
+    font-size: 20px;
+}
+
+.feature-wrapper p{
+    color: #999999;
+    padding-left: 20px;
+    padding-bottom: 10px;
+}
+
+.faculty{
+    background-color: #FFFFEE;
+}
+
+.faculty-wrapper{
+    padding: 50px 100px;
+}
+
+.faculty-contents{
+    padding-bottom: 40px;
+    border-bottom: 1px solid  #A9A9A9;
+}
+
+.faculty-contents h1{
+    text-align: center;
+}
+
+
+.switch-btn{
+    display: flex;
+    text-align: center;
+}
+
+.bunnkei-btn{
+    border-bottom: 3px solid #FF9933;
+    border-right: 1px solid #999999;
+}
+
+.rikei-btn{
+    border-bottom: 3px solid #0099FF;
+}
+
+.switch-btn h2{
+    width: 50%;
+}
+
+.faculty-title{
+    display: flex;
+    padding: 20px 0;
+}
+
+.bunnkei div h3{
+    margin: 0 5px;
+}
+
+.rikei div h3{
+    margin: 0 5px;
+}
+
+.bunnkei div i{
+    padding-top: 5px;
+}
+
+.rikei div i{
+    padding-top: 5px;
+}
+
+.bunnkei div p{
+    margin: 3px 10px;
+}
+
+.rikei div p{
+    margin: 3px 10px;
+}
+
+.notActive{
+    border-bottom: none;
+    color: #999999;
+}
+
+.rikei{
+    display: none;
+}
+
+.event{
+    background-color: #FFFFEE;
+}
+
+.event-wrapper{
+    padding: 40px 70px 0;
+}
+
+.event-contents{
+    padding-bottom: 80px;
+    border-bottom: 1px solid  #A9A9A9;
+}
+
+.event-contents h2{
+    text-align: center;
+    font-size: 35px;
+    letter-spacing: 15px;
+}
+
+.img-container{
+    display: flex;
+}
+
+.nf-img{
+    width: 40%;
+}
+
+.welcome{
+    margin-bottom: 50px;
+}
+
+.event-contents img{
+    
+}
+
+.zenyasai{
+    width: 40%;
+    margin-right: 100px;
+}
+
+.honsai{
+    width: 40%;
+}
+
+.access{
+    background-color: #FFFFEE;
+}
+
+.access-wrapper{
+    padding: 50px 80px;
+    text-align: center;
+}
+
+.access-contents h2{
+    font-size: 35px;
+    letter-spacing: 15px;
+}
+
+.access-contents h3{
+    margin-top: 40px;
+}
+
+.access-contents{
+    
+}
+
+form{
+    background-image: url(images/kyodai-beauty.jpg);
+    background-size: cover;
+    position: relative;
+    
+}
+
+.form-wrapper{
+    padding: 50px 140px;
+    background: rgba(255,255,255,0.4);
+    height: 100%;
+}
+
+.form-contents h2{
+    text-align: center;
+    font-size: 30px;
+    color: #111111;
+    font-weight: normal;
+}
+
+.send{
+    margin-top: 50px;
+    font-size: 20px
+}
+
+.input{
+    width: 100%;
+    margin: 20px 0;
+    background-color: #EEEEEE;
+    opacity: 0.5;
+    border: none;
+    border-radius: 3px;
+    padding-left: 10px;
+}
+
+.email{
+    height: 40px;
+}
+
+textarea{
+    height: 120px;
+    font-family: sans-serif;
+    padding-top: 10px;
+}
+
+.submit{
+    padding: 15px 60px;
+    font-size: 20px;
+    background-color: #32EEFF;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    opacity: 0.9;
+    display: block;
+    margin: 20px auto;
+}
+
+.link{
+    color: white;
+    font-size: 10px;
+    position: absolute;
+    bottom: 0;
+    right: 3px;
+    opacity: 0.5;
+}
+
+footer{
+    background-color: #000000;
+    height: 50px;
+}
+
+.footer-wrapper{
+    display: flex;
+    height: 50px
+}
+
+.page-top{
+    padding: 1px;
+    text-align: center;
+    width: 90%;
+    border-right: 1px solid white;
+}
+
+.page-top:hover{
+    cursor: pointer;
+}
+
+.page-top p{
+    color: white;
+}
+
+.footer-contents{
+    display: flex;
+    width: 10%;
+    margin: 0 0 0 auto;
+    
+}
+
+.footer-contents img{
+    height: 35px;
+    padding: 7px 5px 0 10px;
+}
+
+.footer-contents p{
+    color: aliceblue;
+    
+}
+
+@media (max-width: 670px){
+    
+    .header-left{
+        width: 70%;
+    }
+    
+    .header-btn{
+        width: 30%;
+    }
+    
+    .header-wrapper p{
+        display: none;
+    }
+    
+    .fa-bars{
+        display: inline-block;
+        margin-top: 15px;
+        margin-right: 15px;
+    }
+    
+    .event-contents img{
+        display: block;
+        width: 90%;
+        margin: 30px auto ;
+    }
+    
+    .form-wrapper{
+        padding: 50px 
+    }
+    
+    
+    
+}
